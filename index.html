@@ -1,9 +1,9 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cool Theme Toggle</title>
+  <title>Theme Toggle Showcase</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" />
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
@@ -62,9 +62,11 @@
 
     h1 {
       font-size: var(--h1-font-size);
-      color: var(--title-color);
       font-weight: 600;
       margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--first-color), var(--first-color-alt));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .change-theme {
@@ -95,6 +97,7 @@
 
     p {
       margin-bottom: 2rem;
+      line-height: 1.6;
     }
 
     .button {
@@ -146,16 +149,16 @@
   </style>
 </head>
 <body>
-  <i class="change-theme" id="theme-toggle">🌙</i>
+  <i class="change-theme" id="theme-toggle" title="Toggle Theme">🌙</i>
 
   <main class="container">
-    <h1>Welcome Lol💖</h1>
-    <p>This page supports light and dark themes with a clean modern Look.</p>
-    <a href="https://google.com" class="button" target="_blank" rel="noopener noreferrer">Try Me</a>
+    <h1>Modern Theme Showcase</h1>
+    <p>Experience seamless theme toggling between Light and Dark modes. Built with clean CSS and smooth animations for a polished UI.</p>
+    <a href="https://google.com" class="button" target="_blank" rel="noopener noreferrer">Explore</a>
   </main>
 
   <footer class="footer">
-    <p class="footer__copy">Made with ✌ | Theme Toggle Powered and CSS Variables</p>
+    <p>Crafted with care | Powered by CSS Variables & JS Theme Toggle</p>
   </footer>
 
   <script>
